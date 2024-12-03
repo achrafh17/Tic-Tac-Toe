@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
+  width: 50%;
+  height: 80%;
+  background-color: rgb(196, 194, 194);
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 10px rgb(146, 145, 145);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 7px;
+}
+h1 {
+  text-align: center;
+  
+}
+img {
+  width: 40px;
+}
+main {
+  width: 45%;
+  height: 50%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.cells {
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-size: 20px;
+  cursor: pointer;
+}
+.cells:hover {
+  background-color: rgb(203, 202, 202);
+}
+span {
+  color: blue;
+}
+
+#o {
+  color: red;
+}
+.Replay {
+width: 180px;
+height: 50px;
+background-color: rgb(1, 1, 30);
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: space-around;
+color: white;
+font-size: 23px;
+margin-bottom: 19px;
+display: none;
+border-radius: 10px;
+border: none;
+
+}
+.Replay:hover {
+  background-color:rgb(62, 62, 64) ;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.currentWin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap:30px ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#showbutton {
+  display: flex;
+}
+.X-O-Scores {
+  width: 45%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.xscore , .oscore {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7px;
+}
+#xscorenumber {
+  color: blue;
+  font-size: 24px;
+  font-weight: 600;
+}
+#oscorenumber {
+  color: red;
+  font-size: 24px;
+  font-weight: 600;
+}
+.title-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.modes-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.mode {
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  
+  color: rgb(1, 1, 30);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#ai {
+  background-color: rgb(1, 1, 30);
+  color: white;
+}
+.buttons-replay-reset {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
